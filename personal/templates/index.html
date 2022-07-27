@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Singh</title>
+    <link rel="shortcut icon" href="{% static 'images/favicon.jpg' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar">
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#header" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#aboutme" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">My Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="page1">
+        <div class="brief_intro">
+            <div class="item1">
+
+                <h1>SACHIN SINGH</h1>
+            </div>
+
+            <img src="{% static 'images/sachin.jpg' %}" alt="sachin singh" class="item2">
+
+            <div class="item3">
+                <p>Always happy to do things that can bolster my skills and give me good exposure so that I am able to
+                    take maximum out of my theoretical knowledge. </p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="page2" id="aboutme">
+        <h2>About Me</h2>
+        <div class="about_brief">
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <p>Hey there!, I'm Sachin Singh. I have been pursuing my B.Tech since 2019 specialised in Chemical
+                    Engineering at
+                    National Institute of Technology(NIT) Jalandhar, Punjab. </p>
+                <br>
+                <p>Along with my degree, I completed some courses on Web Development with Django, C++, Python, DBMS,
+                    MYSQL and many other new technologies with help of youtube videos and some courses on Udemy and
+                    Coursera. Learning of these technologies helped me to develop some real life projects such as
+                    E-commerce website called smartcart, Basic Banking System,etc.
+
+                </p>
+                <br>
+                <p>
+                    It was during working on these projects, I found myself more aligned and interested toward these
+                    modern technologies and this way I got interest into all these things inspite of having
+                    specialisation in Core branch.
+                </p>
+                <br>
+                <p>I like to do work in a team and try to learn something from team members. Being a member of team I
+                    always try to be polite with all. </p>
+                <br>
+
+
+                <a class="resume" href="{% static 'cv_sachin_singh.pdf' %}" target="_blank">View / Download Resume</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="page3" id="skills">
+
+        <h2>My Skills</h2>
+        <div class="boxes">
+            <div class="box b1">
+                <h4>Web Development</h4>
+                <div class="skill-item">
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Django</li>
+                        <li>MySQL</li>
+                        <li>JQuery</li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="box b2">
+                <h4>Data Structure and Algorithms</h4>
+                <div class="skill-item">
+                    <ol>
+                        <li>Arrays</li>
+                        <li>Linked List</li>
+                        <li>Strings</li>
+                        <li>Stack,Queue</li>
+                        <li>Sorting, etc..</li>
+                    </ol>
+                </div>
+
+
+            </div>
+            <div class="box b3">
+                <h4>Programming Languages</h4>
+                <div class="skill-item">
+                    <ol>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>Django Template Language(DTL)</li>
+
+                    </ol>
+                </div>
+
+            </div>
+            <div class="box b4">
+                <h4>Computer Tools</h4>
+                <div class="skill-item">
+                    <ol>
+                        <li>MS Word</li>
+                        <li>MS Excel</li>
+                        <li>MS Powerpoint Presentation</li>
+                        <li>Google sheet</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="page4" id="projects">
+        <h2>My Projects</h2>
+        <div class="project_brief">
+            <div class="left">
+
+            </div>
+            <div class="right">
+                This will give you a glimpse of collection of my Projects that I have developed recently. I am very
+                happy to share these projects here with you. Hope you
+                will like and enjoy!. I have given links of project and some briefing for the same so that you can have
+                a fair idea about the project before actually going through it.
+            </div>
+        </div>
+
+        <div class="project p1">
+            <a href="#gfd">
+                <img src="{% static 'images/banking.jpg' %}" alt="">
+            </a>
+            <p>
+                <strong><u>BASIC &nbsp; BANKING &nbsp; SYSTEM</u></strong><br>
+                <br>
+                As the name suggests, it's a basic banking software where you can keep record of your banking
+                transactions.
+                <br>
+                <br>
+                Simply you have to enter the name of the receiver and his/her email address along with the sender's name
+                and his/her basic credentials. Here sender name is being taken so that you can also keep records for
+                your family members, friends, relatives. After entering the details and Amount to be paid please click
+                *Pay Now* button. After successful of the payment your transaction history will be shown in a seperate
+                page. This history will be as long as you want that. If you want to delete any specific transaction, you
+                can delete it by clicking a button given at the right most corner of that particular transaction.
+            </p>
+        </div>
+
+        <div class="project p2">
+            <a href="#jhj">
+                <img src="{% static 'images/e_commerce.jpg' %}" alt="">
+            </a>
+            <p>
+                <strong><u>E-COMMERCE &nbsp; WEBSITE</u></strong><br>
+                <br>
+                This is a E-commerce website. Customer can visit the product by clicking on the "Quick View" button on
+                the product section. It has different sections for different types of product. Customer can add the
+                product in the cart just by clicking on the button "Add To Cart". After choosing the products and
+                putting those into the cart,Customer can go to the checkout page by clicking "Cart(n)" button on the top
+                right corner of the website where he/she can preview the items selected and can fill the delivery and
+                billing address. After placing the order, Customer can track his/her order where he/she will get the
+                latest about order placed.
+                <br>
+                SmartCart is also provided with "Contact Us" page so that if Customer is facing any problem related to
+                the product quality or any specific issue, they can reach out to us. We will get back to them as soon as
+                possible.
+
+            </p>
+        </div>
+
+        <div class="project p3">
+            <a href="#ghdg">
+                <img src="{% static 'images/text_analyser.jpg' %}" alt="">
+            </a>
+            <p>
+                <strong><u>TEXT &nbsp; ANALYSER</u></strong><br>
+                <br>
+                It's simple program based on Python where any user can make a redundant part of a text useful by using
+                certain operations that are provided in this program.
+                <br>
+                <br>
+                Till now, it has only some specific operations
+                that can be applied such as Remove Punctuations, Capitalise Text, Remove unnecessary extra spaces, count
+                the number of character, etc. I am working on it so that it can handle more operations on text and help
+                anyone to make a provided text useful.
+            </p>
+        </div>
+
+        <div class="project p4">
+            <a href="#fdgfg">
+                <img src="{% static 'images/Library.jpg' %}" alt="">
+            </a>
+            <p>
+                <strong><u>LIBRARY &nbsp; MANAGEMENT &nbsp; SYSTEM</u></strong><br>
+                <br>
+                It's a simple Python based program that can create Library and manages different tasks very easily that
+                are very much used in Library. Not only it creates Library but also it can work on already existing
+                libraries.
+                <br>
+                It keeps records of all libraries that the user has created for different uses. It can help in keeping
+                the records of the books that are available for readers, person information who has taken the book from
+                the library, the people record who have made contribution by donating books to make the library more
+                robust, and it also updates the library as a reader returns the book back to the Library.
+            </p>
+        </div>
+
+        <div class="project p5">
+            <a href="#erer">
+                <img src="{% static 'images/healthy_programmer.jpg' %}" alt="">
+            </a>
+            <p>
+                <strong><u>HEALTHY &nbsp; PROGRAMMER</u></strong><br>
+                <br>
+                As we all know a most of the Programmers sit on a place and keeps on doing his/her Programming without
+                caring of health. This unconsciousness by the Programmer is making life of programmer little difficult
+                if we talk about their Physical and Mental health.
+                <br>
+                To get rid off these problems, I have written a simple program that will remind a programmer to do
+                certain physical and mental exercises in certain time. I have taken 3 things to do by programmer as
+                Drinking Water, Doing eye exercise, Doing physical exercise. Once the program is started it will play a
+                music(if it's reminding of drinking water then it will play a sound of water) after a specified time. To
+                confirm that if programmer has completed the exercise he/she can write what he want to write at that
+                time (e.g. taken 500ml water). It will be saved in a file with the date and time so that programmer can
+                analyse and try to improve his/her health during working hours.
+            </p>
+        </div>
+    </section>
+    <hr>
+
+    <section class="page5" id="contact">
+        <h2>Contact Me</h2>
+        <div class="tocontact">
+            <div class="left">
+
+            </div>
+            <div class="right">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <p>Have a Question? Or Just want to say Hi?<br> Drop me a Message!</p>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required placeholder="Your name">
+
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required placeholder="Email Address">
+
+                    <label for="phone">Contact(optional)</label>
+                    <input type="tel" name="phone" id="phone">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required
+                        placeholder="Want to say something to me"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social_media">
+            <ul>
+                <li>
+                    <a class="fb" href="https://www.facebook.com/profile.php?id=100040354222141" target="_blank"><img
+                            src="{% static 'images/facebook_logo_icon_147291.png' %}" alt=""></a>
+                </li>
+
+                <li>
+                    <a class="linkedin" href="https://www.linkedin.com/in/sachin-singh6268" target="_blank"><img
+                            src="{% static 'images/linkedin_icon-icons.com_65929.png' %}" alt=""></a>
+                </li>
+
+                <li>
+                    <a class="git" href="https://github.com/sachinsingh6268" target="_blank"><img
+                            src="{% static 'images/github-logo_icon-icons.com_73546.png' %}" alt=""></a>
+                </li>
+
+                <li>
+                    <a class="insta" href="https://www.instagram.com/__sachin6268/" target="_blank"><img
+                            src="{% static 'images/instagram.png' %}" alt=""></a>
+                </li>
+
+                <li>
+                    <a class="twitter" href="https://twitter.com/sachins6268" target="_blank"><img
+                            src="{% static 'images/twitter.png' %}" alt=""></a>
+                </li>
+
+                <!-- <li>
+                    <a class="gmail" href="#kjdsfa" target="_blank"><img
+                            src="{% static 'images/gmail_icon-icons.com_62758.png' %}" alt=""></a>
+                </li> -->
+
+            </ul>
+
+        </div>
+        <div class="copyright">
+            {% comment %} using 'windows+.' we can use the emojis here as i have used heart here {% endcomment %}
+            <p>Made with <span>💖</span> by Sachin Singh ||
+                copyright
+                &copy; 2022
+                <br>
+                <br>
+                contact at : <u>sachinsingh952252@gmail.com</u>
+            </p>
+
+
+        </div>
+
+    </footer>
+    </div>
+    <script src="{% static 'javascript/index.js' %}"></script>
+</body>
+
+</html>
